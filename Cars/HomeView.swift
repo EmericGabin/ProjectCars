@@ -38,8 +38,8 @@ struct HomeView: View {
                               }
                             }
                             .navigationBarTitle("Car")
-                            .navigationBarItems(trailing: AddBookButton() { // (2)
-                                self.presentAddCarSheet.toggle() // (3)
+                            .navigationBarItems(trailing: AddBookButton() {
+                                self.presentAddCarSheet.toggle()
                               })
                             .sheet(isPresented: self.$presentAddCarSheet) {
                               CarEditView()
